@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet,View, Text } from 'react-native';
 import { Icon } from "native-base";
+import { createBottomTabNavigator } from "react-navigation";
 
 export default class MainScreen extends Component {
   static navigationOptions = {
@@ -15,6 +16,8 @@ export default class MainScreen extends Component {
     );
   }
 }
+
+const AppTabNavigator = createBottomTabNavigator()
 
 const styles = StyleSheet.create({
     container: {
